@@ -1,7 +1,6 @@
 package openproject;
 
 import lombok.SneakyThrows;
-import okhttp3.OkHttpClient;
 import org.config.AutoConfig;
 import org.openproject.OpenProjectApi;
 import org.testng.annotations.BeforeMethod;

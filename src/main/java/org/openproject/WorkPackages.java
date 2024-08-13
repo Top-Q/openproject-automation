@@ -10,5 +10,5 @@ import retrofit2.http.GET;
 public interface WorkPackages {
 
     @GET("work_packages")
-    Call<String> workPackages();
+    Call<String> listWorkPackages();
 }

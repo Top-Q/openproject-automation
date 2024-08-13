@@ -13,7 +13,7 @@ public class TestWorkPackages extends AbstractTest {
          @Test
          @SneakyThrows
          public void testGetWorkPackages() {
-             val response = openProjectApi.workPackages.workPackages().execute();
+             val response = openProjectApi.workPackages.listWorkPackages().execute();
              assertThat(response.code()).isEqualTo(200);
              final int totalWorkPackages = JsonPath.read(response.body(), "$.total");
              System.out.println("Total work packages: " + totalWorkPackages);

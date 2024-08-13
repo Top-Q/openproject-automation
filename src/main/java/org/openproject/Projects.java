@@ -10,9 +10,9 @@ import retrofit2.http.Path;
 public interface Projects {
 
     @GET("projects")
-    Call<String> projects();
+    Call<String> viewProject();
 
     @GET("projects/{id}")
-    Call<String> projects(@Path("id") String id);
+    Call<String> viewProject(@Path("id") String id);
 
 }

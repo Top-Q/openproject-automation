@@ -14,7 +14,7 @@ public class TestProjectsApi extends AbstractTest{
     @SneakyThrows
     public void testGetProjectById() {
         val body = when("we get a project by id", () -> {
-            val response = openProjectApi.projects.projects("my-new-project").execute();
+            val response = openProjectApi.projects.viewProject("my-new-project").execute();
             assertThat(response.code()).isEqualTo(200);
             return response.body();
         });
@@ -26,7 +26,7 @@ public class TestProjectsApi extends AbstractTest{
     @Test
     @SneakyThrows
     public void testGetProjects() {
-        val response = openProjectApi.projects.projects().execute();
+        val response = openProjectApi.projects.viewProject().execute();
         assertThatJson(response.body()).node("count").isEqualTo(4);
         assertThat(response.code()).isEqualTo(200);
         System.out.println(response.body());

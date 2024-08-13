@@ -10,7 +10,6 @@ import java.net.URL;
 
 public class OpenProjectApi {
 
-
     public final Projects projects;
 
     public final WorkPackages workPackages;
