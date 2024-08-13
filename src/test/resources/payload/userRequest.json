@@ -1,1 +1,10 @@
-{"name": "Ilan", "Job": "Engineer"}
+{
+  "login": "j.sheppard",
+  "password": "idestroyedsouvereign",
+  "firstName": "John",
+  "lastName": "Sheppard",
+  "email": "shep@mail.com",
+  "admin": true,
+  "status": "active",
+  "language": "en"
+}

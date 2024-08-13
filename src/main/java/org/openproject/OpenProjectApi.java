@@ -15,6 +15,8 @@ public class OpenProjectApi {
 
     public final WorkPackages workPackages;
 
+    public final Users users;
+
     @SneakyThrows
     public OpenProjectApi(String baseUrl, String accessToken) {
         OkHttpClient.Builder okHttpClientBuilder = new OkHttpClient.Builder().addInterceptor(
@@ -27,6 +29,7 @@ public class OpenProjectApi {
                 .build();
         this.projects = retrofit.create(Projects.class);
         this.workPackages = retrofit.create(WorkPackages.class);
+        this.users = retrofit.create(Users.class);
     }
 
 
